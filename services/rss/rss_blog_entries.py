@@ -77,7 +77,7 @@ class RSSParser():
             _csv_data += str(index) + CSV_DELIM + value + '\n'
 
         # saving to the csv file
-        full_path = 'data\\' + file_name + '.csv'
+        full_path = 'data/' + file_name + '.csv'
         _csv_file = codecs.open(full_path, 'w', 'utf8')
         _csv_file.write(_csv_data)
         _csv_file.close()
@@ -101,7 +101,7 @@ def main():
     Main method that initiates instance of the class and starts processing.
   """
 
-  rss_url = 'https://vdmitriyev.wordpress.com/feed/'
+  rss_url = 'http://astrobites.org/feed/'
   
   csv_file_name = "rss-entries"
   rss = RSSParser(rss_url, csv_file_name)

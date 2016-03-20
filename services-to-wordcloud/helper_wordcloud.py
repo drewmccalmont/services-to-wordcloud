@@ -169,7 +169,7 @@ class WordCloudHelper():
           Loading fonts as specified in the list or by itereting folder with fonts.
         """
 
-        BASE_FOLDER = self.dir_helper.upper_directory() + 'fonts\\'
+        BASE_FOLDER = self.dir_helper.upper_directory() + 'fonts/'
 
         fonts = {}
 
@@ -191,7 +191,7 @@ class WordCloudHelper():
             Loading masks as specified in the list or by itereting folder with masks.
         """
 
-        BASE_FOLDER = self.dir_helper.upper_directory() + 'masks\\'
+        BASE_FOLDER = self.dir_helper.upper_directory() + 'masks/'
 
         masks = {}
         if selected_masks is not None:

@@ -37,8 +37,8 @@ class DirectoryHelper():
         if proposed_dir is not None:
             WORK_DIRECTORY = proposed_dir
 
-        self.current_dir = os.path.dirname(os.path.abspath(__file__)) + '\\'
-        self.work_dir = self.current_dir + WORK_DIRECTORY + '\\'
+        self.current_dir = os.path.dirname(os.path.abspath(__file__)) + '/'
+        self.work_dir = self.current_dir + WORK_DIRECTORY + '/'
 
     def clear_directory(self, directory):
         """
@@ -93,7 +93,7 @@ class DirectoryHelper():
         """
 
         cur_dir = os.path.dirname(os.path.abspath(__file__))
-        up_dir = cur_dir[:cur_dir.rfind('\\')] + '\\'
+        up_dir = cur_dir[:cur_dir.rfind('/')] + '/'
         return up_dir
 
     def save_file(self, file_name, text, encoding='utf-8'):
